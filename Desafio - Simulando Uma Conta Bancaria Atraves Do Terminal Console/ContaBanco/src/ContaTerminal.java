@@ -12,8 +12,8 @@ public class ContaTerminal {
          * Estrutura das variaveis:
          * - Numero da conta: int exemplo: 1021
          * - Agencia: String exemplo: "067-8"
-         * - Nome Cliente: String exemplo: "MARIO"
-         * - Saldo: double exemplo: 237.48
+         * - Nome Cliente: String exemplo: "Fernando"
+         * - Saldo: double exemplo: 237,48
          * 
          * ao final exibir os dados no seguinte formato:
          * "Olá [Nome Cliente], obrigado por criar uma conta em nosso banco, sua agência é [Agencia], conta [Numero] e seu saldo [Saldo] já está disponível para saque"

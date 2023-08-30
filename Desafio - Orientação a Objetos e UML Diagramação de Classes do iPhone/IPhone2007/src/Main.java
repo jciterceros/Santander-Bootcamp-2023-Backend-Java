@@ -1,17 +1,40 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-public class Main {
+/*
+    Com base no vídeo de lançamento do iPhone conforme link abaixo, elabore em uma ferramenta de UML de sua preferência.
+    A diagramação das classes e interfaces com a proposta de representar os papéis do iPhone de:
+
+    - Reprodutor Musical
+    - Aparelho Telefônico
+    - Navegador na Internet
+*/
+public class Main extends iPhone{
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Hello and welcome! to iPhone 2017\n\n");
+        iPhone iPhone = new iPhone();
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        System.out.println("Testando métodos da interface Reprodutor de Musicas");
+        iPhone.selecionarMusica();
+        iPhone.tocarMusica();
+        iPhone.pausarMusica();
+        iPhone.continuarMusica();
+        iPhone.aumentarVolume();
+        iPhone.diminuirVolume();
+        System.out.println("Fim dos testes da interface Reprodutor de Musicas\n\n");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        System.out.println("Testando métodos da interface Telefone");
+        iPhone.ligar(123456789);
+        iPhone.atender();
+        iPhone.chamadaEmEspera();
+        iPhone.iniciarConferencia();
+        iPhone.escutarCorreioVoz();
+        System.out.println("Fim dos testes da interface Telefone\n\n");
+
+        System.out.println("Testando métodos da interface Navegador");
+        iPhone.abrirnavegador();
+        iPhone.pesquisarPagina();
+        iPhone.adicionarPaginaNova();
+        iPhone.trocarDePagina();
+        iPhone.fecharPaginaAtual();
+        iPhone.fecharNavegador();
+        System.out.println("Fim dos testes da interface Navegador\n\n");
     }
 }

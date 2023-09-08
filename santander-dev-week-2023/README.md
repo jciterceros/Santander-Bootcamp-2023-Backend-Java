@@ -15,6 +15,7 @@ Java RESTful API criada para a Santander Dev Week.
 </div>
 
 ## Principais Tecnologias
+
 - **Java 17**: Utilizaremos a versão LTS mais recente do Java para tirar vantagem das últimas inovações que essa linguagem robusta e amplamente utilizada oferece;
 - **Spring Boot 3**: Trabalharemos com a mais nova versão do Spring Boot, que maximiza a produtividade do desenvolvedor por meio de sua poderosa premissa de autoconfiguração;
 - **Spring Data JPA**: Exploraremos como essa ferramenta pode simplificar nossa camada de acesso aos dados, facilitando a integração com bancos de dados SQL;
@@ -64,3 +65,20 @@ classDiagram
   User "1" *-- "1" Card
   User "1" *-- "N" News
 ```
+
+### Corrigindo Erro CORS CI/CD deploy Automatico
+
+    Adicione a segunte linha para corrigir o erro de CORS no APP
+    @OpenAPIDefinition(servers = {@Server(url = "/",description = "Default Server URL")})
+
+<div align="center">
+<img alt="Fix Bug CORS error" title="Fix Bug CORS error" width="750px" src="https://github.com/jciterceros/Santander-Bootcamp-2023-Backend-Java/blob/main/imagens/Fix%20Bug%20CORS%20error.jpg">
+</div>
+
+## Tabela PostgreSQL Criada no RailWay
+
+<div align="center">
+<img alt="SpringBoot PostgreSQL into RailWay" title="SpringBoot PostgreSQL into RailWay" width="750px" src="https://github.com/jciterceros/Santander-Bootcamp-2023-Backend-Java/blob/main/imagens/SpringBoot%20PostgreSQL%20into%20RailWay.JPG">
+</div>
+
+- [Veja a API com Swagger - Santander 2023 - Online](https://apisantander2023-production.up.railway.app/swagger-ui/index.html)
